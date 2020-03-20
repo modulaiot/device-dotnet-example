@@ -1,0 +1,3 @@
+[submodule "device-lib"]
+	path = device-lib
+	url = https://github.com/modulaiot/device-dotnet.git
