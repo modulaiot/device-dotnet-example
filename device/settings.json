@@ -1,0 +1,7 @@
+{
+    "Test": {
+        "Type": "CoreSettings",
+        "Name": "Test Config",
+        "TestParam": "TestParam"
+    }
+}
