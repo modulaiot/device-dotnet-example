@@ -15,9 +15,8 @@ namespace device
             var run = new Command("run", "Run the device");
             run.Handler = CommandHandler.Create(async () =>
             {
-                Console.WriteLine("Run");
-                var device = new ModulaIOTDeviceBuilder().Build();
-                await device.Run();
+                await using var device = new ModulaIOTDeviceBuilder().Build();
+                await device.Load();
                 return 0;
             });
             root.AddCommand(run);
