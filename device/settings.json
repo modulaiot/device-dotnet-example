@@ -1,7 +1,18 @@
 {
-  "Test": {
-    "Type": "CoreSettings",
-    "Name": "Test Config",
-    "TestParam": "TestParam"
+  "name": "Device Name",
+  "modules": {
+    "controller": {
+      "name": "Controller Module",
+      "host": "http://localhost:5000",
+      "adopted": "True"
+    },
+    "temperature": {
+      "name": "Temp Sensor",
+      "sensors": {
+        "outside": {
+          "provider": "Bme280"
+        }
+      }
+    }
   }
 }
