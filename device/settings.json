@@ -3,8 +3,7 @@
   "modules": {
     "controller": {
       "name": "Controller Module",
-      "host": "http://localhost:5000",
-      "adopted": "True"
+      "host": "http://localhost:5000"
     },
     "temperature": {
       "name": "Temp Sensor",
